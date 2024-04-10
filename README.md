@@ -17,7 +17,7 @@
 │   ├── sipm2data0\_ev4\_dig.csv\
 │   ├── text.txt\
 │   └── Untitled.ipynb\
-├── template.vhdl 
+├── template.vhdl
 
 ### Top and TB entity
 ├── testbench\
