@@ -1,29 +1,29 @@
 ## STRUCTURE
 
 ### Datatypes including sipmhit
-├── dtypes \
+├── dtypes\
 │   └── dtypes.vhdl
 
 ### Filter containing trapezoidal
-├── filter \
+├── filter\
 │   └── filter.vhdl
 
 ### Simulated Frontend reading in Sipmhit from CSV converting it to vhdl Dtype
-├── readtxt \
-│   ├── data.csv \
-│   ├── ghdlcomp.sh \
-│   ├── readtxt.vhdl \
-│   ├── sipm1data0\_ev4\_dig.csv \
-│   ├── sipm2data0\_ev4\_dig.csv \
-│   ├── text.txt \
-│   └── Untitled.ipynb \
-├── template.vhdl \
+├── readtxt\
+│   ├── data.csv\
+│   ├── ghdlcomp.sh\
+│   ├── readtxt.vhdl\
+│   ├── sipm1data0\_ev4\_dig.csv\
+│   ├── sipm2data0\_ev4\_dig.csv\
+│   ├── text.txt\
+│   └── Untitled.ipynb\
+├── template.vhdl 
 
 ### Top and TB entity
-├── testbench \
-│   └── top\_tb.vhdl \ 
-└── top \
-    └── top.vhdl \
+├── testbench\
+│   └── top\_tb.vhdl\ 
+└── top\
+    └── top.vhdl
 
 
 ## LOG
