@@ -4,15 +4,15 @@ use IEEE.numeric_std.all;
 use std.textio.all;
 use dtypes.sipm.all;
 
-entity a is 
+entity fe is 
 port(	i_clk:		in std_logic;
 	i_rst:		in std_logic;
 	i_trig: 	in std_logic;
 	o_sipm1:	out sipmhit
 );
-end a;
+end fe;
 
-architecture arch of a is
+architecture arch of fe is
 	p_read : process(s_clk, s_rst)
 
 		file f_data 	  	: text open read_mode is "text.txt";

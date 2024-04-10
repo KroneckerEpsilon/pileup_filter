@@ -14,7 +14,7 @@ port(	i_clk:		in std_logic;
 end x;
 
 architecture arch of x is
-	component pulse is 
+	component fe is 
 	port(	i_clk:		in std_logic;
 		i_rst:		in std_logic;
 		i_trig:		in std_logic;
@@ -34,5 +34,5 @@ architecture arch of x is
 	signal s_sipm1 : std_logic;
 
 begin
-	fe: pulse port map (i_clk=>i_clk, i_rst=>i_rst, i_trig=>i_trig, o_sipm1=>s_sipm1);
+	pulse: fe port map (i_clk=>i_clk, i_rst=>i_rst, i_trig=>i_trig, o_sipm1=>s_sipm1);
 	flt: trapezoidal port map (i_clk=>i_clk, i_rst=>i_rst, i_trig=>i_trig, i_sipm1=>s_sipm1, o_sipm1f=>o_main);  

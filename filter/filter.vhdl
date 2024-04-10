@@ -11,7 +11,7 @@ entity trapezoidal is
 		o_sipm1f:	out sipmhit
 	);
 	generic(
-	M	: time := 3 ns;
+	M	: integer := 3;
 	K	: integer := 10;
 	L	: integer := 3
 	);
@@ -19,8 +19,17 @@ entity trapezoidal is
 end trapezoidal;
 
 architecture arch of trapezoidal is 
+	signal x : sipmhit;
+	signal delayK : sipmhit;
+	signal delayL : sipmhit;
+	signal delayKL : sipmhit;
+	signal b : sipmhit;
+	signal c : sipmhit;
+	signal product : sipmhit;
+	signal y : sipmhit;
 
 begin
+	x <= i_sipm1;
 	filter: for n in i to j generate
 	st1 : m_subtract port map (x(n), x(n-K), delayK(n));
 	st2 : m_subtract port map (delayK(n), delayK(n-L), delayKL(n));
@@ -29,5 +38,5 @@ begin
 	add : m_add port map ((b(n), product(n), c(n));
 	acc2 : m_add port map (c(n), y(n-1), y(n));
 	end generate filter;
-
+	y <= o_sipm1f;
 end arch;
