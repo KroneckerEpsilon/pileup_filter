@@ -1,17 +1,17 @@
 ## STRUCTURE
 
 ### Datatypes including sipmhit
-├── dtypes
+├── dtypes \
 │   └── dtypes.vhdl
 
 ### Filter containing trapezoidal
-├── filter
+├── filter \
 │   └── filter.vhdl
 
 ### Simulated Frontend reading in Sipmhit from CSV converting it to vhdl Dtype
-├── readtxt
-│   ├── data.csv
-│   ├── ghdlcomp.sh
+├── readtxt \
+│   ├── data.csv \
+│   ├── ghdlcomp.sh \
 │   ├── readtxt.vhdl
 │   ├── sipm1data0_ev4_dig.csv
 │   ├── sipm2data0_ev4_dig.csv
