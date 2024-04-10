@@ -15,12 +15,12 @@
 │   ├── readtxt.vhdl \
 │   ├── sipm1data0\_ev4\_dig.csv \
 │   ├── sipm2data0\_ev4\_dig.csv \
-│   ├── text.txt \n 
+│   ├── text.txt \\ 
 │   └── Untitled.ipynb \
 ├── template.vhdl \
 
 ### Top and TB entity
-├── testbench \n
+├── testbench \\
 │   └── top\_tb.vhdl \ 
 └── top \
     └── top.vhdl \
