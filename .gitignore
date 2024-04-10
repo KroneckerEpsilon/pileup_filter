@@ -1,0 +1,6 @@
+*.vcd
+*.cf
+*.o
+template.vhdl
+*.csv
+readtxt/.ipynb_checkpoints
