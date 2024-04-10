@@ -3,4 +3,4 @@
 *.o
 template.vhdl
 *.csv
-readtxt/.ipynb_checkpoints
+readtxt/.ipynb_checkpoints/*
