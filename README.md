@@ -12,18 +12,18 @@
 ├── readtxt \
 │   ├── data.csv \
 │   ├── ghdlcomp.sh \
-│   ├── readtxt.vhdl
-│   ├── sipm1data0_ev4_dig.csv
-│   ├── sipm2data0_ev4_dig.csv
-│   ├── text.txt
-│   └── Untitled.ipynb
-├── template.vhdl
+│   ├── readtxt.vhdl \
+│   ├── sipm1data0_ev4_dig.csv \
+│   ├── sipm2data0_ev4_dig.csv \
+│   ├── text.txt \ 
+│   └── Untitled.ipynb \
+├── template.vhdl \
 
 ### Top and TB entity
-├── testbench
-│   └── top_tb.vhdl
-└── top
-    └── top.vhdl
+├── testbench \
+│   └── top_tb.vhdl \ 
+└── top \
+    └── top.vhdl \
 
 
 ## LOG
