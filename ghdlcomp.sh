@@ -4,15 +4,20 @@ runtime=10ns
 
 while IFS= read -r line
 do
-	arr = ($line)
-	ghdl -a ${arr[0]}
-	if [[-n "${arr[1]}"]]
+	echo "Evaluate $line"
+	arr=($line)
+	ghdl -a --std=08 ${arr[0]} 
+	if [ -n "${arr[1]}" ]
 		then 
-		ghdl -e ${arr[1]}
+			echo "Compile $line"
+			ghdl -e --std=08 ${arr[1]}
 	fi
-	if [[-n "${arr[2]}"]]
-		then runtime=${arr[2]}
-		ghdl -r $2 --vcd=run.vcd --stop-time=$runtime
+	if [ -n "${arr[2]}" ]
+		then 
+			runtime=${arr[2]}
+			echo "Running $line"
+			ghdl -r --vcd=run.vcd --stop-time=$runtime ${arr[2]}
 	fi
 done < complist.txt
-gtkwave run.vcd 
+#gtkwave run.vcd
+

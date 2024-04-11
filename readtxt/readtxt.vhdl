@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use std.textio.all;
-use dtypes.sipm.all;
+use work.sipm.all;
 
 entity fe is 
 port(	i_clk:		in std_logic;
@@ -13,7 +13,8 @@ port(	i_clk:		in std_logic;
 end fe;
 
 architecture arch of fe is
-	p_read : process(s_clk, s_rst)
+begin
+	p_read : process(i_clk, i_rst)
 
 		file f_data 	  	: text open read_mode is "text.txt";
 		Variable row 	  	: line;
