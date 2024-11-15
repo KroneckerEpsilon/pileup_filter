@@ -1,8 +1,0 @@
-dtypes/dtypes.vhdl
-filter/add.vhdl m_add
-filter/subtract.vhdl m_subtract
-filter/multiply.vhdl m_multiply
-filter/filter.vhdl trapezoidal
-readtxt/readtxt.vhdl fe
-top/top.vhdl x 
-top/top_tb.vhdl tb 
