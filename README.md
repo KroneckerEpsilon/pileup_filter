@@ -1,35 +1,32 @@
-## STRUCTURE
+# STRUCTURE
 
-### Datatypes including sipmhit
-├── dtypes\
-│   └── dtypes.vhdl
+## Analysis
+.
+├── analysis
+│   ├── analysis.ipynb
+│   ├── filter\_convolutional\_model.ipynb
+│   ├── filter\_softwaresim.ipynb
+### filter functions defined as .py
+│   ├── sipm\_filters.py
+### Auxilary Notebooks to handle the csv data
+│   ├── digest.ipynb
+│   └── to\_v.ipynb
 
+## Firmware Part
+├── FPGA
+│   ├── downsampling
+### Datatypes including sipmhit, dsphit etc. TODO: simulate fixed comma
+│   ├── dtypes
 ### Filter containing trapezoidal
-├── filter\
-│   └── filter.vhdl
-
+│   ├── filter
+### Vivado Project
+│   ├── firmware
 ### Simulated Frontend reading in Sipmhit from CSV converting it to vhdl Dtype
-├── readtxt\
-│   ├── data.csv\
-│   ├── ghdlcomp.sh\
-│   ├── readtxt.vhdl\
-│   ├── sipm1data0\_ev4\_dig.csv\
-│   ├── sipm2data0\_ev4\_dig.csv\
-│   ├── text.txt\
-│   └── Untitled.ipynb\
-├── template.vhdl
-
+│   ├── readtxt
 ### Top and TB entity
-├── testbench\
-│   └── top\_tb.vhdl\ 
-└── top\
-    └── top.vhdl
+│   ├── top
+### old ghdl compilation and run method
+│   ├── ghdl
 
+├── README.md
 
-## LOG
-
-### 10.04.24
-- Created Gitrepo
-- TODO: Implement Filter Submodules
-- Write Compile Methods for multiple Entities
-- Connect Filter Generics to system-wide parameters

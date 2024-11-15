@@ -1,6 +1,14 @@
 *.vcd
 *.cf
 *.o
-template.vhdl
 *.csv
-readtxt/.ipynb_checkpoints/*
+FPGA/readtxt/.ipynb_checkpoints/*
+*.txt
+FPGA/firmware/project_1.cache
+FPGA/firmware/project_1.gen
+FPGA/firmware/project_1.hw
+FPGA/firmware/project_1.ip_user_files
+FPGA/firmware/project_1.runs
+FPGA/firmware/project_1.sim
+*.png
+*.pdf
