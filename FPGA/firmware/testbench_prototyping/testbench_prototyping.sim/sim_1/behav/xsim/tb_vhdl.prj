@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../testbench_prototyping.gen/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd" \
+"../../../../../../old/dtypes/dtypes_depr.vhdl" \
+"../../../../testbench_prototyping.srcs/sources_1/ip/div_gen_0/demo_tb/tb_div_gen_0.vhd" \
+"../../../../testbench_prototyping.srcs/sources_1/ip/div_gen_0/sim/div_gen_0.vhd" \
+"../../../../testbench_prototyping.srcs/sources_1/new/dummy.vhd" \
+"../../../../testbench_prototyping.srcs/sim_1/new/testbench01.vhdl" \
+
+# Do not sort compile order
+nosort

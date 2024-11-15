@@ -1,0 +1,256 @@
+
+*** Running vivado
+    with args -log mult_gen_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_gen_0.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Oct  1 17:29:15 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mult_gen_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 507.086 ; gain = 202.828
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mult_gen_0
+Command: synth_design -top mult_gen_0 -part xc7k70tfbv676-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Device 21-9227] Part: xc7k70tfbv676-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1864
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1365.504 ; gain = 447.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [c:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.gen/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.gen/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.gen/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [c:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.gen/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:71]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 5 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TYPE bound to: 1 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TYPE bound to: 1 - type: integer 
+	Parameter C_OUT_HIGH bound to: 63 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 0 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_21' declared at 'c:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.gen/sources_1/ip/mult_gen_0/hdl/mult_gen_v12_0_vh_rfs.vhd:21527' bound to instance 'U0' of component 'mult_gen_v12_0_21' [c:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.gen/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (0#1) [c:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.gen/sources_1/ip/mult_gen_0/synth/mult_gen_0.vhd:68]
+WARNING: [Synth 8-7129] Port CE in module mult_gen_v12_0_21_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module mult_gen_v12_0_21_viv is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 1529.570 ; gain = 611.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 1529.570 ; gain = 611.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 1529.570 ; gain = 611.680
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1529.570 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1600 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.gen/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.gen/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.runs/mult_gen_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1573.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 528 instances were transformed.
+  MULT_AND => LUT2: 528 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1575.680 ; gain = 2.195
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.runs/mult_gen_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port CE in module mult_gen_v12_0_21_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module mult_gen_v12_0_21_viv is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:58 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:07 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:17 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:17 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:17 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:17 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:17 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:17 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   144|
+|2     |LUT2     |   516|
+|3     |LUT4     |   496|
+|4     |MULT_AND |   528|
+|5     |MUXCY    |   528|
+|6     |SRL16E   |     6|
+|7     |XORCY    |   544|
+|8     |FDRE     |  1143|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:17 . Memory (MB): peak = 1575.680 ; gain = 657.789
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:01:13 . Memory (MB): peak = 1575.680 ; gain = 611.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:17 . Memory (MB): peak = 1575.680 ; gain = 657.789
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1575.680 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1744 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'mult_gen_0' is not ideal for floorplanning, since the cellview 'luts' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1575.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 672 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 144 instances
+  MULT_AND => LUT2: 528 instances
+
+Synth Design complete | Checksum: 3df294b7
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:29 . Memory (MB): peak = 1575.680 ; gain = 1056.113
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1575.680 ; gain = 0.000
+WARNING: [Runs 36-115] Could not delete directory 'C:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.runs/mult_gen_0_synth_1/.Xil/Vivado-17664-RoedelheimsRook/dcp0'.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.runs/mult_gen_0_synth_1/mult_gen_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mult_gen_0, cache-ID = 37e47b457e294bb0
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1575.680 ; gain = 0.000
+WARNING: [Runs 36-115] Could not delete directory 'C:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.runs/mult_gen_0_synth_1/.Xil/Vivado-17664-RoedelheimsRook/dcp1'.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.runs/mult_gen_0_synth_1/mult_gen_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mult_gen_0_utilization_synth.rpt -pb mult_gen_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  1 17:31:06 2024...

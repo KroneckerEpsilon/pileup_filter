@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Oct  2 16:16:51 2024
+# Process ID: 14308
+# Current directory: C:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.runs/synth_1
+# Command line: vivado.exe -log dummy.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dummy.tcl
+# Log file: C:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.runs/synth_1/dummy.vds
+# Journal file: C:/Users/Jan/Dropbox/Uni/valencia/practicas/FPGA/CCRYSP_pileup/testbench_prototyping/testbench_prototyping.runs/synth_1\vivado.jou
+# Running On        :RoedelheimsRook
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-4460  CPU @ 3.20GHz
+# CPU Frequency     :3199 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :17113 MB
+# Swap memory       :8053 MB
+# Total Virtual     :25166 MB
+# Available Virtual :8824 MB
+#-----------------------------------------------------------
+source dummy.tcl -notrace
