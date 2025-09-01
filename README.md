@@ -2,31 +2,31 @@
 
 ## Analysis
 .
-├── analysis
-│   ├── analysis.ipynb
-│   ├── filter\_convolutional\_model.ipynb
-│   ├── filter\_softwaresim.ipynb
+- analysis
+  - analysis.ipynb
+  - filter\_convolutional\_model.ipynb
+  - filter\_softwaresim.ipynb
 ### filter functions defined as .py
-│   ├── sipm\_filters.py
+  - sipm\_filters.py
 ### Auxilary Notebooks to handle the csv data
-│   ├── digest.ipynb
-│   └── to\_v.ipynb
+  - digest.ipynb
+  - to\_v.ipynb
 
 ## Firmware Part
-├── FPGA
-│   ├── downsampling
+- FPGA
+  - downsampling
 ### Datatypes including sipmhit, dsphit etc. TODO: simulate fixed comma
-│   ├── dtypes
+  - dtypes
 ### Filter containing trapezoidal
-│   ├── filter
+  - filter
 ### Vivado Project
-│   ├── firmware
+  - firmware
 ### Simulated Frontend reading in Sipmhit from CSV converting it to vhdl Dtype
-│   ├── readtxt
+  - readtxt
 ### Top and TB entity
-│   ├── top
+  - top
 ### old ghdl compilation and run method
-│   ├── ghdl
+  - ghdl
 
-├── README.md
+- README.md
 
